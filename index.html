@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Loan Amortization Data</title>
+    
+    
+    <script src="ajax.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="script.js"></script>
+    
+
+  </head>
+
+  <body>
+    <!-- <script src="script.js"></script> -->
+    
+
+    <h1> Amortization Chart </h1>
+    <br></br>
+    <p> Hello, this application is meant to chart and provide a table of data for you to help forsee the process of a loan. It charts data given with principal balance, the annual interest rate, and the loan term length represented in months </p>
+
+    <!-- Collecting data from client for givens -->
+    <div id="table"></div>
+    <div id = "graphs"></div>
+
+
+    Loan Amount: <input type = "text" id="loanAmount">
+    <br></br>
+    Annual Interest rate: <input type = "text" id="annualInterestRate"/>
+    <br/><br/>
+    Loan term length in years: <input type = "text" id="termLength">
+    <br></br>
+    <button onClick="plotTableAndGraph()"> Plot Table and graphs! </button>
+
+
+  </body>
+
+</html>
