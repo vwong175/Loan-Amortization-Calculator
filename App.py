@@ -1,4 +1,5 @@
 import numpy
+import numpy_financial as npf
 
 # Payment amount stays fixed
 def calculatePaymentAmount(totalLoanAmount, annualInterestRate, termLength):
@@ -6,7 +7,7 @@ def calculatePaymentAmount(totalLoanAmount, annualInterestRate, termLength):
   nper = termLength * 12
   pv = totalLoanAmount * -1
 
-  monthlyPaymentAmount = numpy.pmt(ratePerMonth,nper,pv)
+  monthlyPaymentAmount = npf.pmt(ratePerMonth,nper,pv)
   monthlyPaymentAmount = round(monthlyPaymentAmount, 2) 
   return monthlyPaymentAmount 
 
